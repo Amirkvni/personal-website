@@ -1,0 +1,44 @@
+/* desktop fitst : */
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  .menu__item {
+    margin-left: 2rem;
+  }
+  .nav__logo {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    width: 100%;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 200ms ease-in;
+    height: 0px;
+    overflow: hidden;
+  }
+  .menu--open {
+    height: 33rem; /*add with js*/
+  }
+  .menu__item {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .menu__item:first-child {
+    margin-top: 2rem;
+  }
+  .nav__toggle-icon {
+    display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+}
