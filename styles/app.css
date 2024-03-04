@@ -25,6 +25,8 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins";
   line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--app-bg-color);
 }
 /* header : */
 .header {
@@ -123,4 +125,68 @@ body {
 .cover--show {
   opacity: 1;
   z-index: 99;
+}
+/* home : */
+.home {
+  margin-top: 8rem;
+}
+.main {
+  padding-top: 12rem;
+}
+.home__content {
+}
+.home__name {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-family: "Poppins SemiBold";
+}
+.home__name span {
+  color: #f57f17;
+}
+.home__title {
+  font-family: "Poppins Bold";
+  color: var(--primary-color);
+  font-size: 4rem;
+  margin: 0;
+}
+.home__caption {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.home__links-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.home__link {
+}
+.home__photo {
+  width: 50rem;
+  height: 50rem;
+  background-image: url(../images/header-avatar.jpg);
+  border-radius: 100%;
+  border: 2.5rem solid #fff;
+  background-repeat: no-repeat;
+  background-position: center top;
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+}
+/* component btn : */
+.app-btn {
+  width: 16rem;
+  height: 5rem;
+  border-radius: 4rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  font-family: "Poppins SemiBold";
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.app-btn--orange {
+  background-color: #f57f17;
+}
+/* helper class : */
+.items--center {
+  align-items: center;
 }
