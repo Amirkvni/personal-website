@@ -1,7 +1,15 @@
 /* desktop fitst : */
 @media screen and (max-width: 1400px) {
+  .home__photo {
+    width: 45rem;
+    height: 45rem;
+  }
 }
 @media screen and (max-width: 1200px) {
+  .home__photo {
+    width: 38rem;
+    height: 38rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .menu__item {
@@ -9,6 +17,21 @@
   }
   .nav__logo {
     font-size: 5rem;
+  }
+  .home__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .home {
+    margin-top: 6rem;
+  }
+  .home__photo {
+    margin: 0 auto;
+  }
+  .home .row {
+    flex-direction: column-reverse;
   }
 }
 @media screen and (max-width: 768px) {
@@ -41,4 +64,26 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .home__title {
+    font-size: 4rem;
+  }
+  .home__name {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .home__title {
+    font-size: 3.5rem;
+  }
+  .home__name {
+    font-size: 2rem;
+  }
+  .home__photo {
+    width: 32rem;
+    height: 32rem;
+    border-width: 1.5rem;
+  }
+  .home__links-wrapper {
+    gap: 2rem;
+  }
 }
