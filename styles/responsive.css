@@ -16,6 +16,10 @@
   .home {
     height: 68rem;
   }
+  .about_cover,
+  .about_content {
+    flex-basis: 50%;
+  }
 }
 @media screen and (max-width: 992px) {
   .menu__item {
@@ -33,6 +37,7 @@
   .home {
     margin-top: 6rem;
     background-image: none;
+    height: auto;
   }
   .home__photo {
     margin: 0 auto;
@@ -41,8 +46,16 @@
     flex-direction: column-reverse;
   }
   .home__photo {
+    margin: 0 auto;
     width: 36rem;
     height: 36rem;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about_cover,
+  .about_content {
+    flex-basis: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -78,6 +91,9 @@
     height: 34rem;
     border-width: 1.5rem;
   }
+  .about_content {
+    padding: 2rem 4rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .home__title {
@@ -90,16 +106,15 @@
     width: 30rem;
     height: 30rem;
   }
+  .about__link {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 410px) {
   .home__title {
     font-size: 3rem;
   }
-  .home__name {
-    font-size: 2rem;
-  }
   .home__links-wrapper {
-    gap: 2rem;
     width: 100%;
   }
   .home__link {
