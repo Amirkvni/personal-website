@@ -26,6 +26,9 @@
   .about_content {
     flex-basis: 50%;
   }
+  .service {
+    padding: 7rem 2rem;
+  }
 }
 @media screen and (max-width: 992px) {
   .menu__item {
@@ -99,6 +102,12 @@
   }
   .about_content {
     padding: 2rem 4rem;
+  }
+  .service {
+    padding: 4rem 1rem;
+  }
+  .service__icon {
+    width: 6rem;
   }
 }
 @media screen and (max-width: 576px) {
