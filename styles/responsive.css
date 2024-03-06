@@ -1,4 +1,10 @@
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1300px;
+  }
+}
 /* desktop fitst : */
+
 @media screen and (max-width: 1400px) {
   .home__photo {
     width: 45rem;
