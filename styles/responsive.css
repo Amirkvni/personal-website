@@ -29,6 +29,9 @@
   .service {
     padding: 7rem 2rem;
   }
+  .resume-list {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 992px) {
   .menu__item {
@@ -65,6 +68,39 @@
   .about_cover,
   .about_content {
     flex-basis: auto;
+  }
+  .resume-list::before,
+  .resume-list__item::before,
+  .resume-content__title::before {
+    content: none;
+  }
+  .resume-list__icon {
+    display: none;
+  }
+  .resume-list {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: auto;
+    background-color: transparent;
+  }
+  .resume-list__item {
+    border-radius: 4rem;
+    padding: 1rem 2rem;
+    margin-bottom: 0;
+  }
+  .resume-list__item--active {
+    background-color: var(--primary-color);
+  }
+  .resume-list__text {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .resume-content {
+    border-left: none;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 768px) {

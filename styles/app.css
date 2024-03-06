@@ -357,7 +357,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-right: 3rem;
-  min-height: 36rem;
+  min-height: 40rem;
 }
 .h-full {
   height: 100%;
@@ -373,7 +373,7 @@ body {
   z-index: -1;
 }
 .resume-list__item {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   position: relative;
