@@ -337,3 +337,81 @@ body {
   background-color: #13b6ff;
 }
 /* resume : */
+.resume {
+  margin-top: 20rem;
+  background-color: var(--section-bg-color);
+  margin-bottom: 10rem;
+  box-shadow: 0 0.4rem 4rem rgba(4, 195, 255, 40%);
+  padding: 10rem 0;
+  transform: skewY(-6deg);
+}
+.skew-reset {
+  transform: skewY(6deg);
+}
+.resume-list {
+  background-color: var(--app-bg-color);
+  box-shadow: 0 0.4rem 4rem rgba(96, 233, 255, 27%);
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h-full {
+  height: 100%;
+}
+.resume-list::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background-color: var(--primary-color);
+  width: 4rem;
+  z-index: -1;
+}
+.resume-list__item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.6rem 0;
+  cursor: pointer;
+}
+.resume-list__item :last-child {
+  margin-bottom: 0;
+}
+.resume-list__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  width: 5.4rem;
+  z-index: -1;
+  border-radius: 3rem;
+  transition: all 0.2s ease-in;
+}
+.resume-list__icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 0.8rem;
+}
+.resume-list__text {
+  font-family: "Poppins SemiBold";
+  font-size: 1.8rem;
+  transition: all 0.2s ease-in;
+  margin-left: 2.5rem;
+}
+.resume-list__item--active span {
+  color: #fff;
+}
+.resume-list__item--active::before {
+  max-width: 26rem;
+  width: 100%;
+}
+.resume-content {
+}
+.resume-content--show {
+}
