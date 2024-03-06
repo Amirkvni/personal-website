@@ -391,6 +391,7 @@ body {
   width: 5.4rem;
   z-index: -1;
   border-radius: 3rem;
+  max-width: 26rem;
   transition: all 0.2s ease-in;
 }
 .resume-list__icon {
@@ -408,7 +409,6 @@ body {
   color: #fff;
 }
 .resume-list__item--active::before {
-  max-width: 26rem;
   width: 100%;
 }
 .resume-content {
