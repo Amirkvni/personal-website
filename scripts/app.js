@@ -20,7 +20,3 @@ resumeListItems.forEach((resumeListItem) => {
     document.querySelector(contentid).classList.add("resume-content--show");
   });
 });
-work - history;
-programming - skill;
-designer - skills;
-seo - skills;

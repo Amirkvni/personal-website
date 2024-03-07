@@ -7,6 +7,10 @@
     <link rel="icon" type="image/png" href="images/app-logo.png" />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -511,8 +515,57 @@
           </div>
         </div>
       </section>
+      <section class="portfolio">
+        <div class="container">
+          <div class="section-head">
+            <h3 class="section-head__title">Portfolio</h3>
+            <p class="section-head__caption">Check in Our Lastest Works</p>
+            <span class="section-head__line"></span>
+          </div>
+          <ul class="portfolio-list">
+            <li class="portfolio-list__item">All Work</li>
+            <li class="portfolio-list__item">Illustration</li>
+            <li class="portfolio-list__item">Animation</li>
+            <li class="portfolio-list__item">App Ui</li>
+            <li class="portfolio-list__item">Web Ui</li>
+            <li class="portfolio-list__item">Social Media</li>
+            <li class="portfolio-list__item">Print Design</li>
+          </ul>
+          <div class="portfolio-content">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="images/portfolio-1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/portfolio-2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/portfolio-3.jpg" alt="" />
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="portfolio-content"></div>
+        </div>
+      </section>
     </main>
     <div class="cover"></div>
     <script src="scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/Javascript">
+        // swiper api for slider :
+      const swiper = new Swiper(".swiper", {
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
