@@ -523,7 +523,9 @@
             <span class="section-head__line"></span>
           </div>
           <ul class="portfolio-list">
-            <li class="portfolio-list__item portfolio-list__item--active">All Work</li>
+            <li class="portfolio-list__item portfolio-list__item--active">
+              All Work
+            </li>
             <li class="portfolio-list__item">Illustration</li>
             <li class="portfolio-list__item">Animation</li>
             <li class="portfolio-list__item">App Ui</li>
@@ -555,6 +557,18 @@
                     class="portfolio-content__image"
                   />
                 </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-3.jpg"
+                    class="portfolio-content__image"
+                  />
+                </div>
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
@@ -568,13 +582,26 @@
     <script src="scripts/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/Javascript">
-        // swiper api for slider :
-      const swiper = new Swiper(".swiper", {
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
+            // swiper api for slider :
+          const swiper = new Swiper(".swiper", {
+            // If we need pagination
+            pagination: {
+              el: ".swiper-pagination",
+            },
+           // Responsive breakpoints
+            breakpoints: {
+        // when window width is >= 320px
+        768:{
+          slidesPerView: 2,
+          spaceBetween:30
+        }
+         ,
+         1200:{
+          slidesPerView: 3,
+          spaceBetween:30
+        }
+      }
+          });
     </script>
   </body>
 </html>

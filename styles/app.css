@@ -488,22 +488,25 @@ body {
   background-color: var(--primary-color);
   height: 4.5rem;
 }
-/* .portfolio-content {
+.portfolio-content {
 }
 .swiper-wrapper {
 }
 .swiper-slide {
 }
 .portfolio-content__image {
+  width: 100%;
 }
 .swiper-pagination {
+  position: static !important; /*default8*/
+  margin-top: 1rem;
 }
 .portfolio-content {
-} */
+}
 .swiper-pagination-bullet {
   width: 2rem !important;
   height: 2rem !important;
-  border: 4px solid #bfbebe !important;
+  border: 0.4rem solid #bfbebe !important;
   background-color: #fff !important;
 }
 .swiper-pagination-bullet-active {
