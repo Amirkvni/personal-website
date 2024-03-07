@@ -3,37 +3,39 @@ const menu = document.querySelector(".menu");
 const cover = document.querySelector(".cover");
 const resumeListItems = document.querySelectorAll(".resume-list__item");
 const portfolioListItems = document.querySelectorAll(".portfolio-list__item");
-
-navToggleIcon.addEventListener("click", () => {
-  navToggleIcon.classList.toggle("nav__toggle-icon-open");
+navToggleIcon.addEventListener("click", function () {
+  this.classList.toggle("nav__toggle-icon--open");
   menu.classList.toggle("menu--open");
   cover.classList.toggle("cover--show");
 });
-resumeListItems.forEach((resumeListItem) => {
-  resumeListItem.addEventListener("click", function () {
-    document
-      .querySelector(".resume-list__item--active")
-      .classList.remove("resume-list__item--active");
-    document
-      .querySelector(".resume-content--show")
-      .classList.remove("resume-content--show");
-    this.classList.add("resume-list__item--active");
-    let contentid = this.getAttribute("data-content-id");
-    document.querySelector(contentid).classList.add("resume-content--show");
-  });
-});
 
-// portfolio :
-portfolioListItems.forEach((portfolioListItem) => {
-  portfolioListItem.addEventListener("click", function () {
-    document
-      .querySelector(".portfolio-list__item--active")
-      .classList.remove("portfolio-list__item--active");
-    document
-      .querySelector(".portfolio-content--show")
-      .classList.remove("portfolio-content--show");
-    this.classList.add("portfolio-list__item--active");
-    let contentid = this.getAttribute("data-content-id");
-    document.querySelector(contentid).classList.add("portfolio-content--show");
+function navigationTabsInit(
+  listItems,
+  listItemActiveClass,
+  contentItemShowClass
+) {
+  listItems.forEach((listItem) => {
+    listItem.addEventListener("click", function () {
+      document
+        .querySelector(`.${listItemActiveClass}`)
+        .classList.remove(listItemActiveClass);
+      document
+        .querySelector(`.${contentItemShowClass}`)
+        .classList.remove(contentItemShowClass);
+      this.classList.add(listItemActiveClass);
+      let contentId = this.getAttribute("data-content-id");
+      document.querySelector(contentId).classList.add(contentItemShowClass);
+    });
   });
-});
+}
+
+navigationTabsInit(
+  resumeListItems,
+  "resume-list__item--active",
+  "resume-content--show"
+);
+navigationTabsInit(
+  portfolioListItems,
+  "portfolio-list__item--active",
+  "portfolio-content--show"
+);
