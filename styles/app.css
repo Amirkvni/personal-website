@@ -478,15 +478,17 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+  flex-wrap: wrap;
 }
 .portfolio-list__item {
   padding: 1.2rem 3rem;
   border-radius: 4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 .portfolio-list__item--active {
   color: #ffff;
   background-color: var(--primary-color);
-  height: 4.5rem;
 }
 .portfolio-content {
 }
@@ -504,9 +506,9 @@ body {
 .portfolio-content {
 }
 .swiper-pagination-bullet {
-  width: 2rem !important;
-  height: 2rem !important;
-  border: 0.4rem solid #bfbebe !important;
+  width: 1.8rem !important;
+  height: 1.8rem !important;
+  border: 0.3rem solid #bfbebe !important;
   background-color: #fff !important;
 }
 .swiper-pagination-bullet-active {
