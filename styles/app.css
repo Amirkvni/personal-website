@@ -491,10 +491,14 @@ body {
   background-color: var(--primary-color);
 }
 .portfolio-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
 }
-.swiper-wrapper {
-}
-.swiper-slide {
+.portfolio-content--show {
+  height: auto;
+  opacity: 1;
 }
 .portfolio-content__image {
   width: 100%;

@@ -2,6 +2,8 @@ const navToggleIcon = document.querySelector(".nav__toggle-icon");
 const menu = document.querySelector(".menu");
 const cover = document.querySelector(".cover");
 const resumeListItems = document.querySelectorAll(".resume-list__item");
+const portfolioListItems = document.querySelectorAll(".portfolio-list__item");
+
 navToggleIcon.addEventListener("click", () => {
   navToggleIcon.classList.toggle("nav__toggle-icon-open");
   menu.classList.toggle("menu--open");
@@ -18,5 +20,20 @@ resumeListItems.forEach((resumeListItem) => {
     this.classList.add("resume-list__item--active");
     let contentid = this.getAttribute("data-content-id");
     document.querySelector(contentid).classList.add("resume-content--show");
+  });
+});
+
+// portfolio :
+portfolioListItems.forEach((portfolioListItem) => {
+  portfolioListItem.addEventListener("click", function () {
+    document
+      .querySelector(".portfolio-list__item--active")
+      .classList.remove("portfolio-list__item--active");
+    document
+      .querySelector(".portfolio-content--show")
+      .classList.remove("portfolio-content--show");
+    this.classList.add("portfolio-list__item--active");
+    let contentid = this.getAttribute("data-content-id");
+    document.querySelector(contentid).classList.add("portfolio-content--show");
   });
 });
