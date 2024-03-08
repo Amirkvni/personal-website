@@ -196,7 +196,7 @@ body {
 }
 /* heade : */
 .aboutus {
-  margin-top: 6rem;
+  margin-top: 8rem;
 }
 .section-head {
   text-align: center;
@@ -301,7 +301,7 @@ body {
 }
 /* services : */
 .services {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .service {
   color: #fff;
@@ -338,7 +338,7 @@ body {
 }
 /* resume : */
 .resume {
-  margin-top: 20rem;
+  margin-top: 8rem;
   background-color: var(--section-bg-color);
   box-shadow: 0 0.4rem 4rem rgba(4, 195, 255, 40%);
   padding: 8rem 0;
@@ -479,6 +479,7 @@ body {
   align-items: center;
   margin-bottom: 4rem;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .portfolio-list__item {
   padding: 1.2rem 3rem;
@@ -582,7 +583,7 @@ body {
 }
 /* contact us : */
 .contactus {
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .contactus__wrapper {
   background-image: url(../images/map.jpg);
