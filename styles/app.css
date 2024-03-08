@@ -608,7 +608,7 @@ body {
 .contact {
   background-color: var(--app-bg-color);
   box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
-  max-width: 50rem;
+  max-width: 55rem;
   padding: 4.5rem;
   margin-left: auto;
 }
