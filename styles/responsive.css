@@ -166,6 +166,13 @@
   .about__link {
     width: 100%;
   }
+  .footer__wrapper {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .footer__copyRight {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 460px) {
   .service__wave {
