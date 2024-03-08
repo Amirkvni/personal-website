@@ -2,10 +2,27 @@
 @import "grid.css";
 @import "fonts.css";
 :root {
-  --text-color: #3333333;
+  --text-color: #333333;
   --app-bg-color: #fff;
   --section-bg-color: #fff;
   --primary-color: #0abead;
+}
+
+:root.dark-theme {
+  --text-color: #95a5c6;
+  --app-bg-color: #161d26;
+  --section-bg-color: #1f2935;
+}
+:root.dark-theme .home {
+  background-image: url("../images/shapes/header-shapeDark.svg");
+}
+:root.dark-theme .header,
+:root.dark-theme .home__photo,
+:root.dark-theme .about,
+:root.dark-theme .resume-list,
+:root.dark-theme .pricing,
+:root.dark-theme .package {
+  box-shadow: none;
 }
 /* reset styles: */
 a {
@@ -513,6 +530,7 @@ body {
   height: 1.8rem !important;
   border: 0.3rem solid #bfbebe !important;
   background-color: #fff !important;
+  opacity: 1 !important;
 }
 .swiper-pagination-bullet-active {
   border-color: var(--primary-color) !important;
@@ -557,6 +575,7 @@ body {
 
 .package__body {
   padding: 3rem 0;
+  background-color: var(--app-bg-color);
 }
 .package-options {
   margin: auto;
@@ -606,7 +625,7 @@ body {
   width: 2rem;
 }
 .contact {
-  background-color: var(--app-bg-color);
+  background-color: var(--section-bg-color);
   box-shadow: 0 0 4rem rgba(19, 182, 255, 24%);
   max-width: 55rem;
   padding: 4.5rem;
@@ -632,6 +651,7 @@ body {
   box-shadow: 0 0 5rem rgba(96, 233, 255, 27%);
   border-radius: 1rem;
   color: var(--text-color);
+  background-color: var(--app-bg-color);
 }
 .contact__input::placeholder {
   color: var(--text-color);
@@ -673,7 +693,9 @@ body {
   display: flex;
   gap: 1rem;
 }
-.footer__social {
+
+.footer__social,
+.change-theme {
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 100%;
@@ -681,12 +703,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
+
 .footer__social:hover {
   background-color: var(--primary-color);
 }
-.footer__social svg {
+.footer__social svg,
+.change-theme svg {
   width: 3rem;
   height: 3rem;
   fill: var(--app-bg-color);
+}
+.change-theme svg {
+  fill: #fff;
 }
